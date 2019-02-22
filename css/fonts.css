@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-Regular');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-RegularItalic'),
+  font-size: italic,
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-Bold'),
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-BoldItalic'),
+  font-weight: bold,
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-Light'),
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-LightItalic'),
+  font-weight: lighter,
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-Medium'),
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'code',
+  src: url('Fonts/OfficeCodePro-MediumItalic');
+  font-weight: 700,
+  font-style: italic;
+}

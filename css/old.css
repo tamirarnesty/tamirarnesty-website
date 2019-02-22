@@ -1,0 +1,52 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkgrey;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 14px;
+  text-decoration: none; /*Removes underlines and all other effects to butttons so they don't look like links */
+}
+
+ul li a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+ul li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content, .dropdown-content {
+  display: block;
+}
