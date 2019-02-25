@@ -1,9 +1,28 @@
+:root {
+  --main-tint-color: rgb(144, 251, 220);
+}
+
 body {
   background-color: rgb(13, 25, 45);
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set all sections to be full screen. */
+.introduction, .about, .experience, .education, .contact {
+  min-height: 100vh;
+}
+
+.introduction, .about, .experience, .education, .contact h1 {
+  color: white;
 }
 
 /* Navigation Bar */
-.topnav {
+.topnav .menuItems {
   font-family: 'code', monospace;
   font-size: 15px;
   overflow: hidden;
@@ -15,7 +34,7 @@ body {
 .topnav a {
   float: left;
   display: inline-block;
-  color: rgb(144, 251, 220);
+  color: var(--main-tint-color, white);
   /* vertical -  horizonta*/
   text-decoration: none;
   padding: 10px 15px;
@@ -26,13 +45,20 @@ body {
   color: white;
 }
 
+.topnav .image img {
+  float: left;
+  width: 5%;
+  padding: 10px 5px;
+  height: 5%;
+}
+
 a.documentButton:hover {
-  color: rgb(144, 251, 220);
+  color: var(--main-tint-color, white);
   background-color: rgba(144, 251, 220, 0.2);
 }
 
 a.documentButton {
-  border: 0.5px solid rgb(144, 251, 220);
+  border: 0.5px solid var(--main-tint-color, white);
   border-radius: 2px;
   /* Maintains normal vertical padding but adds
   additional 5px to horizontal. */
@@ -41,12 +67,13 @@ a.documentButton {
 }
 
 /* Introduction */
-.introduction {
+.introduction .information {
   display: block;
   position: absolute;
   top: 25%;
   left: 20%;
 }
+
 .introduction h1, h2, h3 {
   font-family: 'code', monospace;
   font-weight: normal;
@@ -117,6 +144,74 @@ a.documentButton {
   }
 }
 
+/* Change footer appearance. */
+footer {
+  background-color: rgb(7, 11, 19);
+  position: relative;
+  height: 40px;
+  margin-top: -60px;
+}
+
+footer section {
+  display: flex;
+  padding: 10px;
+  margin: auto;
+}
+
+footer a {
+  font-family: 'code', monospace;
+  font-size: 15px;
+  color: var(--main-tint-color, white);
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: rgb(239, 130, 176);
+}
+
+
+/* Link images and tinting. */
+.links {
+  display: inline-block;
+  position: fixed;
+  top: 50px;
+  max-width: 24px;
+  left: 1%;
+}
+
+/* .links a[title]:hover:after {
+  content: attr(title);
+  color: rgb(239, 130, 176);
+  font-family: 'code', monospace;
+  font-weight: bold;
+  position: absolute;
+  top: 8%;
+  left: 40px;
+} */
+
+.links img {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  margin: 0;
+  float: left;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.scrollButton {
+  display: none;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  width: 48px;
+  height: 48px;
+}
 /*
 Text colors
 Xcode NSObject rgb(153, 207, 195)

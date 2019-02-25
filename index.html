@@ -2,43 +2,90 @@
 <html lang="en-US">
 <head>
   <link rel="stylesheet" href="css/styles.css">
-  <script type="text/javascript" src="js/navigation.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/smoothScroll.js"></script>
   <title>Tamir Arnesty | Software Developer </title>
 </head>
 
-<div class="topnav" id="mainnav">
-  <a href="#about" class="active">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#contact">Contact</a>
-  <a href="files/resume.pdf" target="_blank" rel="nofollow noreferrer" class="documentButton">Resume</a>
-</div>
+<body>
+  <header>
+    <div class="topnav" id="mainnav">
+      <div class="image">
+        <a href="#logo" rel="noreferrer">
+          <img src="img/logo.png" alt="Tamir Arnesty">
+        </a>
+      </div>
+      <div class="menuItems">
+        <a href="#about" class="active">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="files/resume.pdf" target="_blank" rel="nofollow noreferrer" class="documentButton">Resume</a>
+      </div>
+    </div>
+  </header>
 
-<div class="menuBars" onclick="animateMenu(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-</div>
+  <div class="menuBars" onclick="animateMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+  </div>
 
-<div class="introduction">
-  <h1 class="hello">Hi. My name is</h1>
-  <h2 class="name">Tamir Arnesty.</h2>
-  <h3 class="fadeup-enter-done" style="transition-delay: 1000ms">I write code.</h3>
-</div>
+  <div class="links" id="socialLinks">
+    <a href="https://github.com/tamirarnesty" target="_blank" rel="nofollow noreferrer" title="Github"><img src="img/github.png" alt="Github"></img></a>
+    <a href="https://www.linkedin.com/in/tamirarnesty/" target="_blank" rel="nofollow noreferrer" title="LinkedIn"><img src="img/linkedin.png" alt="LinkedIn"></a>
+    <a href="https://twitter.com/tamirsway" target="_blank" rel="nofollow noreferrer" title="Twitter"><img src="img/twitter.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com/tamirarnesty/" target="_blank" rel="nofollow noreferrer" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+  </div>
+
+  <button type="button" id="scrollButton" class="scrollButton" onclick="topFunction(this)"><img src="img/up-chevron.png"></button>
+
+  <div class="introduction" id="introduction">
+    <div class="information">
+      <h1 class="hello">Hi. My name is</h1>
+      <h2 class="name">Tamir Arnesty.</h2>
+      <h3 class="fadeup-enter-done" style="transition-delay: 1000ms">I write code.</h3>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <h1 class="hello">About</h1>
+  </div>
+
+  <div class="experience" id="experience">
+    <h1 class="hello">Experience</h1>
+  </div>
+
+  <div class="education" id="education">
+    <h1 class="hello">Education</h1>
+  </div>
+
+  <div class="contact" id="contact">
+    <h1 class="hello">Contact</h1>
+  </div>
+
+  <footer>
+    <section>
+      <a href="https://github.com/tamirarnesty/tamirarnesty.github.io" target="_blank" rel="nofollow noreferrer" >Designed & Built by Tamir Arnesty in 2019</a>
+    </section>
+  </footer>
+</body>
+
 </html>
 
 <!--
 <nav>
-  <ul>
-    <li><a href="home.html">Home</a></li>
-    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Projects</a>
-    <div class="dropdown-content">
-      <a href="#">iOS Apps</a>
-      <a href="#">School Projects</a>
-      <a href="#">Personal Projects</a>
-    </div>
-  </li>
-    <li><a href="about.html">About</a></li>
-  </ul>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">Projects</a>
+<div class="dropdown-content">
+<a href="#">iOS Apps</a>
+<a href="#">School Projects</a>
+<a href="#">Personal Projects</a>
+</div>
+</li>
+<li><a href="about.html">About</a></li>
+</ul>
 </nav>
 -->
