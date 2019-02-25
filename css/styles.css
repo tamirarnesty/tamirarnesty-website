@@ -1,9 +1,24 @@
 body {
   background-color: rgb(13, 25, 45);
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set all sections to be full screen. */
+.introduction, .about, .experience, .education, .contact {
+  min-height: 100vh;
+}
+
+.introduction, .about, .experience, .education, .contact h1 {
+  color: white;
 }
 
 /* Navigation Bar */
-.topnav {
+.topnav .menuItems {
   font-family: 'code', monospace;
   font-size: 15px;
   overflow: hidden;
@@ -26,6 +41,13 @@ body {
   color: white;
 }
 
+.topnav .image img {
+  float: left;
+  width: 5%;
+  padding: 10px 5px;
+  height: 5%;
+}
+
 a.documentButton:hover {
   color: rgb(144, 251, 220);
   background-color: rgba(144, 251, 220, 0.2);
@@ -41,12 +63,13 @@ a.documentButton {
 }
 
 /* Introduction */
-.introduction {
+.introduction .information {
   display: block;
   position: absolute;
   top: 25%;
   left: 20%;
 }
+
 .introduction h1, h2, h3 {
   font-family: 'code', monospace;
   font-weight: normal;
@@ -115,6 +138,34 @@ a.documentButton {
     display: block;
     text-align: left;
   }
+}
+
+/* Change footer appearance. */
+footer {
+  background-color: rgb(7, 11, 19);
+  position: relative;
+  height: 40px;
+  margin-top: -60px;
+}
+
+footer section {
+  display: flex;
+  padding: 10px;
+  margin: auto;
+}
+
+footer a {
+  font-family: 'code', monospace;
+  font-size: 15px;
+  color: rgb(144, 251, 220);
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: rgb(239, 130, 176);
 }
 
 /*
